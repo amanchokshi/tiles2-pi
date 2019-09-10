@@ -19,7 +19,7 @@ echo "echo \"[06:02AM]: Checking for missing data files from the last 24 hours.\
 at 06:03 < /home/jline/check_missing.sh
 at 06:04 < /home/jline/do_rsync_clear.sh
 
-echo "scp /home/jline/t2.txt achokshi@ozstar.swin.edu.au:/fred/oz048/achokshi/mwa_sats/data/status" | at 06:23
+echo "scp /home/jline/t2.txt cerberus:/home/amanchokshi/status" | at 06:23
 
 # Clean up and get ready for next day
 echo "rm /home/jline/t2.txt" | at 06:25
