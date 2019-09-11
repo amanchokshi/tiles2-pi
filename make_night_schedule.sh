@@ -5,9 +5,9 @@ OBS_LENGHT=1800
 START=`date +'%Y-%m-%d-%H:%M' -d '6am'`
 STOP=`date +'%Y-%m-%d-%H:%M' -d '6am +1 day'`
 
-# START=2019-09-10-17:40
-# STOP=2019-09-10-18:28
-# OBS_LENGHT=60
+# START=2019-09-12-00:00
+# STOP=2019-09-12-06:00
+# OBS_LENGHT=1800
 
 
 python make_night_schedule.py --time_obs=$OBS_LENGHT --start_date=$START \
