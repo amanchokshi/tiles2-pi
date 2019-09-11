@@ -21,7 +21,7 @@ elif [ $MISSING_STATUS = MISSING_FILES ]; then
 
 else
 
-    echo "echo \"[06:05AM]: No rsync or clear_data required as there were no data.\" >> /home/jline/t2.txt" | at 06:21
+    echo "echo \"[06:05AM]: No rsync or clear_data required as there was no data.\" >> /home/jline/t2.txt" | at 06:21
     echo "echo \"\" >> /home/jline/t2.txt" | at 06:22
     echo "echo \"\" >> /home/jline/t2.txt" | at 06:22
 
