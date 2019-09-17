@@ -48,7 +48,7 @@ class obs(object):
             end = time.time()+obslen
 
         self.ser.write(RFE.send["Resume"])
-        max_record = time.time() + obslen
+        max_record = time.time() + obslen - 10  # Another 10s burrfer to try and help prevent missing files
 
 
 	phys_addr = RFE.usb_map['ttyUSB%d' %int(self.tile)]
